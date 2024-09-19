@@ -1,0 +1,204 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: black;
+}
+
+
+.mainspace{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* .input-space{
+    width: 25vw;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px 5px 10px 5px;
+    font-size: 50px;
+    border: 0px solid;
+    color: white;
+    text-align: right;
+    background-color: rgb(85, 54, 54);
+} */
+
+/* .input-space {
+    width: 25vw;          Ensure the div takes the full width of its parent 
+    height: 50px;         Set a fixed height for the input area
+    margin-bottom: 20px;
+    padding: 10px 5px 10px 5px;
+    box-sizing: border-box; Ensure padding doesn't affect width
+    border: 0px solid;
+    font-size: 50px;      Set font size for the input text
+    overflow: hidden;     Hide any overflowing content
+    text-overflow: ellipsis; Show ellipsis (...) if text overflows
+    white-space: nowrap;  Prevent text from wrapping onto multiple lines
+    color: white;
+    display: flex;        Use flexbox to control text alignment
+    align-items: center;  Vertically center the text
+    justify-content: flex-end; Align text to the right
+} */
+
+.input-space {
+    width: 25vw;
+    height: 10vh;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 0px solid;
+    font-size: 50px;
+    color: white;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-align: right; /* Align text to the right */
+    direction: rtl; /* Right-to-left direction for scrollbar positioning */
+}
+
+/* Webkit browsers like Chrome, Safari */
+.input-space::-webkit-scrollbar {
+    height: 8px; /* Increase scrollbar height for better visibility */
+}
+
+.input-space::-webkit-scrollbar-track {
+    background: rgb(51, 51, 51); /* Darker track for better contrast */
+}
+
+.input-space::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    border-radius: 4px;
+}
+
+.input-space::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 85, 85);
+}
+
+.input-space::-webkit-scrollbar-thumb:active {
+    background: rgb(54, 54, 54);
+}
+
+
+.row1, .row2, .row3, .row4, .row5{
+    display: flex;
+}
+
+
+
+.btn3{
+    margin: 10px;
+    height: 75px;
+    width: 170px;
+    padding: 20px; 
+    display: flex; 
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(50, 50, 52);
+    color: white;
+    border-radius: 50px;
+    border: 0;
+    font-size: 25px;
+}
+
+
+
+.btn2, .btn, .btn1 {
+    margin: 10px;
+    height: 75px;
+    width: 75px;
+    padding: 10px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 0px;
+    font-size: 25px;
+}
+
+
+
+.btn1{
+    background-color: rgb(204, 204, 204);
+}
+.btn1:hover{
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+.btn1:active{
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.btn2{
+    background-color: rgb(254, 149, 5);
+    color: white;
+    font-size: 35px;
+}
+.btn2:hover{
+    background-color: rgb(248, 173, 69);
+    cursor: pointer;
+}
+.btn2:active{
+    background-color: white;
+    color: rgb(254, 149, 5);
+}
+
+
+
+.btn{
+    background-color: rgb(50, 50, 52);
+    color: white;
+}
+.btn:hover, .btn3:hover{
+    background-color: rgb(133, 133, 136);
+    cursor: pointer;
+}
+.btn:active, .btn3:active{
+    background-color: white;
+    color: rgb(133, 133, 136);
+}
+
+
+
+/* .btn2 img, .btn1 img {
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle; 
+    fill: white; 
+    background-color: transparent; 
+} */
+
+.plus-minus, .dive{
+    width: 30px; 
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle; 
+    fill: white; 
+    background-color: transparent; 
+}
+.plus-minus:active, .dive:active{
+    color: rgb(254, 149, 5);
+}
+.btn2:active .plus-minus, .btn2:active .dive, .btn2:active .mult {
+    fill: rgb(254, 149, 5); 
+}
+.mult{
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle; 
+    fill: white; 
+    background-color: transparent; 
+}
+
+.point:disabled{
+    cursor: not-allowed;
+}
+
+
+
+
